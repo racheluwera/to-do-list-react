@@ -1,16 +1,68 @@
-# React + Vite
+# Professional Task Manager
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern, responsive todo list application built with React and Vite, featuring drag-and-drop functionality and a clean green-themed UI.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+-  **Add Tasks** - Create new tasks with optional due dates
+-  **Delete Tasks** - Remove completed or unwanted tasks
+-  **Drag & Drop** - Reorder tasks by dragging and dropping
+-  **Due Dates** - Set and display due dates for tasks
+-  **Responsive Design** - Works seamlessly on mobile, tablet, and desktop
+-  **Modern UI** - Clean green color scheme with smooth animations
 
-## React Compiler
+## Tech Stack
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- **React** - UI library
+- **Vite** - Build tool and dev server
+- **Tailwind CSS** - Utility-first CSS framework
 
-## Expanding the ESLint configuration
+## Installation
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+1. Clone the repository:
+```bash
+git clone <repository-url>
+cd "ToDoList- React"
+```
+
+2. Install dependencies:
+```bash
+npm install
+```
+
+3. Start the development server:
+```bash
+npm run dev
+```
+
+## Usage
+
+- **Add a task**: Type in the task input field, optionally select a due date, and click "Add Task" or press Enter
+- **Delete a task**: Hover over a task and click the red ✕ button
+- **Reorder tasks**: Click and drag a task to a new position in the list
+- **View task count**: See the total number of tasks in the badge at the top of the list
+
+## Build for Production
+
+```bash
+npm run build
+```
+
+The production-ready files will be in the `dist` folder.
+
+## Project Structure
+
+```
+ToDoList- React/
+├── src/
+│   ├── components/
+│   │   └── todolist.jsx    # Main todo list component
+│   ├── App.jsx              # Root component
+│   ├── main.jsx             # Entry point
+│   └── index.css            # Global styles
+├── public/                  # Static assets
+├── index.html               # HTML template
+└── package.json             # Dependencies and scripts
+```
+
+
